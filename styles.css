@@ -1569,10 +1569,12 @@ footer{
   .teacherSwiper {
     padding: 0;
     left: 0;
+    
   }
   
   .teacher-card {
     width: 200px;
+    
   }
   
   /* Courses section */
@@ -1663,24 +1665,7 @@ footer{
   footer{
    transform: translateY(750px);
   }
-  .faculty-head{
-   white-space: nowrap;
-  }
-  .idk p{
-    white-space: nowrap;
-  }
- .faculty-head, .idk{
-  transform: translateX(-120px);
- }
- .user-faculty{
-  flex-direction: column;
- 
-  justify-content: center;
-  align-items: center;
-  padding: 42px !important;
- }
 
- 
 /* For very small screens */
 @media only screen and (max-width: 480px) {
   .logo-text h2.hin {
