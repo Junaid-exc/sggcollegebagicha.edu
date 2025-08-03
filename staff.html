@@ -37,7 +37,7 @@
         </div>
         <div class="logo-area">
             <div class="logo">
-                 <a href="index.html">
+                  <a href="index.html">
                <img class="lg" src="/assts/favicon.png" alt="logo">
               </a>
             <div class="logo-text">
@@ -110,9 +110,10 @@
                 <span class="dropdown"> 
                     <span class="fac">STAFF</span>
                     <ul class="dropdown-menu">
-                        <li><i class="ri-arrow-right-s-line"></i>Teaching Staff</li>
-                        <li><i class="ri-arrow-right-s-line"></i>Non-Teaching Staff</li>
+                        <a href="staff.html#teaching-staff"><li><i class="ri-arrow-right-s-line"></i>Teaching Staff</li></a>
+                        <a href="staff.html#non-teaching-staff"><li><i class="ri-arrow-right-s-line"></i>Non-Teaching Staff</li></a>
                     </ul>
+                    
                 </span>
         
                 <span class="dropdown"> 
@@ -160,24 +161,202 @@
         </div>
         <section class="faculty-profile">
         <div class="faculty">
-            <h4 class="faculty-head">Faculty Profile</h4>
+            <h4 class="faculty-head">TEACHING STAFF</h4>
             <div class="idk">
- <a href="index.html">Home </a> <span>/</span> <p>faculty Profile</p>
+ <a href="index.html">Home </a> <span>/</span> <p>STAFF</p> <span>/</span>  <p class="dynamic">TEACHING STAFF</p>
             </div>
            
 
+     
         </div>
-         <h3 class="prof">Profile</h3>
-        <div class="user-faculty " id="profile">
+
+         <div class="container">
+        <div class="staff-tabs">
+            <button class="staff-tab active" onclick="showStaff('teaching')">Teaching Staff</button>
+            <button class="staff-tab" onclick="showStaff('non-teaching')">Non-Teaching Staff</button>
+        </div>
+        
+        <div id="teaching-staff" class="staff-container">
+            <div class="staff-header">
+               <ul>
+                <li>S. no.</li>
+                <li>Staff Photo</li>
+                <li>Staff Name</li>
+                <li>Qualification</li>
+                <li>Department</li>
+                <li>Designation</li>
+                <li>Contact No.</li>
+                <li>Profile</li>
+               </ul>
+            </div>
+            <div class="staff-list">
+                <ul>
+                    <li>1</li>
+                    <li><img class="staffimage" src="/assts/F18.jpeg" alt="Teacher 1"></li>
+                    <li>Smt. Astha Tirky</li>
+                    <li>Msc,Set,Net,Gate.</li>
+                    <li>Botany</li>
+                    <li>Asst. Professor</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html?fid=1">View Profile</a></li>
+                </ul>
+                <ul>
+                    <li>2</li>
+                    <li><img src="/assts/F8.jpg" alt="Teacher 2"></li>
+                    <li>Smt. Pooja Singh</li>
+                    <li>Msc.B.ed</li>
+                    <li>Chemistry</li>
+                    <li>Guest Lecturer</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html?fid=2">View Profile</a></li>
+                </ul>
+                <ul>
+                    <li>3</li>
+                    <li><img src="/assts/F4.jpg" alt="Teacher 3"></li>
+                    <li>Mr. Pravin Minj</li>
+                    <li>M.Com CG-SET</li>
+                    <li>Commerce</li>
+                    <li>Asst. Professor</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html">View Profile</a></li>
+                </ul>
+                <ul>
+                    <li>4</li>
+                    <li><img class="staffimage" src="/assts/F19.jpeg" alt="Teacher 1"></li>
+                    <li>Smt. Karuna Xalxo</li>
+                    <li>Msc,CgSet</li>
+                    <li>Zoology</li>
+                    <li>Asst. Professor</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html?fid=1">View Profile</a></li>
+                </ul>
+                <ul>
+                    <li>5</li>
+                    <li><img src="/assts/download.jpg" alt="Teacher 2"></li>
+                    <li>MR. Gukesh Dommaraju </li>
+                    <li>18th Chess World Champion</li>
+                    <li>Chess</li>
+                    <li>GrandMaster</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html?fid=5">View Profile</a></li>
+                </ul>
+                <ul>
+                    <li>6</li>
+                    <li><img src="/assts/magnus.png" alt="Teacher 3"></li>
+                    <li>Mr. Magnus Carlsen</li>
+                    <li>Five time World Champion</li>
+                    <li>Chess</li>
+                    <li>GrandMaster</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html">View Profile</a></li>
+                </ul>
+                <ul>
+                    <li>7</li>
+                    <li><img class="staffimage" src="/assts/Mikhail_Tal_1962.jpg" alt="Teacher 1"></li>
+                    <li>Mr. Mikhail Tal</li>
+                    <li>8th World Champion(1960)
+</li>
+                    <li>Chess</li>
+                    <li>GrandMaster</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html?fid=7">View Profile</a></li>
+                </ul>
+                <ul>
+                    <li>8</li>
+                    <li><img src="/assts/images.jpg" alt="Teacher 2"></li>
+                    <li>Mr. Bobby Fischer</li>
+                    <li>11th World Champion</li>
+                    <li>Chess</li>
+                    <li>Botany</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html?fid=8">View Profile</a></li>
+                </ul>
            
-              <img class="faculty-img" src="hello" alt="Faculty image Missing">
-              <ul class="faculty-info">
-                <li class="Name"><span>NAME:</span><p id="Name"></p></li>
-                <li class="Qual"><span>QUALIFICATION:</span><p id="quali">Phd, Cgset</p></li>
-                <li class="Degin"><span>DESGINATION:</span><p id="desgi">English</p></li>
-                <li class="Dept"><span>DEPARTMENT:</span> <p id="depart">English</p></li>
-              </ul>
+            </div>
         </div>
+        
+        <div id="non-teaching-staff" class="staff-container" style="display: none;">
+            <div class="staff-header">
+               <ul>
+                <li>S. no.</li>
+                <li>Staff Photo</li>
+                <li>Staff Name</li>
+                <li>Qualification</li>
+                <li>Department</li>
+                <li>Designation</li>
+                <li>Contact No.</li>
+                <li>Profile</li>
+               </ul>
+            </div>
+            <div class="staff-list">
+                <ul>
+                    <li>1</li>
+                    <li><img class="staffimage" src="/assts/f13.jpeg" alt="Staff 1"></li>
+                    <li>Dr. Rajiv Ranjan Tigga</li>
+                    <li>M.Phil Ph.d</li>
+                    <li>English</li>
+                    <li>Asst. Proffesor</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html?fid=5">View Profile</a></li>
+                </ul>
+                <ul>
+                    <li>2</li>
+                    <li><img src="/assts/zenitsu.png" alt="Staff 2"></li>
+                    <li>Mohammad Junaid</li>
+                    <li>Webdev,Python,Chess,B.sc</li>
+                    <li>Programmer</li>
+                    <li>Programmer,Webdev</li>
+                    <li><a href="tel:1234567890">1234567890</a></li>
+                    <li><a href="facultyprofile.html?fid=10">View Profile</a></li>
+                </ul>
+             
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to handle URL hash changes
+        function handleHashChange() {
+            const hash = window.location.hash;
+            if (hash.includes('Non%20Teaching%20Staff') || hash.includes('non-teaching')) {
+                showStaff('non-teaching');
+            } else {
+                showStaff('teaching');
+            }
+        }
+        
+        // Function to show the selected staff type
+        function showStaff(type) {
+            const teachingStaff = document.getElementById('teaching-staff');
+            const nonTeachingStaff = document.getElementById('non-teaching-staff');
+            const teachingTab = document.querySelector('.staff-tab:nth-child(1)');
+            const nonTeachingTab = document.querySelector('.staff-tab:nth-child(2)');
+            let dynamic
+            = document.querySelector('.dynamic');
+            
+            if (type === 'non-teaching') {
+                teachingStaff.style.display = 'none';
+                nonTeachingStaff.style.display = 'block';
+                teachingTab.classList.remove('active');
+                nonTeachingTab.classList.add('active');
+                window.location.hash = 'Type=Non%20Teaching%20Staff';
+                dynamic.innerText = 'NON-TEACHING STAFF';
+            } else {
+                teachingStaff.style.display = 'block';
+                nonTeachingStaff.style.display = 'none';
+                teachingTab.classList.add('active');
+                nonTeachingTab.classList.remove('active');
+                window.location.hash = 'Type=Teaching%20Staff';
+                dynamic.innerText = 'TEACHING STAFF';
+            }
+        }
+        
+        // Initialize based on URL hash
+        window.addEventListener('load', handleHashChange);
+        window.addEventListener('hashchange', handleHashChange);
+    </script>
+  
+       
         </section>
 
         <footer class="college-footer">
@@ -249,120 +428,16 @@
 
  
   }
+    footer{
+   transform: translateY(490px);
+
+
+  }
   
  
 </style>
 <script>
-
-     const teachers = {
-      1: {
-        name: "Mrs. Astha Tirky",
-        dept: "Botany",
-        Desgination: "Assistant Professor(Botany)",
-        qual: "Msc,Set,Net,Gate.",
-        img: "/assts/F18.jpeg"
-      },
-      2: {
-        name: "Mrs. Pooja Singh",
-        dept: "Chemistry",
-         Desgination: "Guest Lecturer(Chemistry) ",
-        qual: "MSc, B.Ed",
-        img: '/assts/F8.jpg'
-      },
-      3: {
-        name: "Mr. Pravin Minj",
-        dept: "Commerce",
-         Desgination: "Assistant Professor(Commerce)",
-        qual: "M.Com CG-SET",
-        img: '/assts/F4.jpg'
-      },
-      4: {
-        name: "Mrs. Karuna Xalxo",
-        dept: "Zoology",
-        Desgination: "Asistant Professor(Zoology)",
-        qual: "Msc,CgSet.",
-        img: "/assts/F19.jpeg"
-      },
-      5: {
-        name: "Dr. Rajiv Ranjan tigga",
-        dept: "English",
-         Desgination: "Assistant Professor(English)",
-        qual: "M.Phill, Ph.D.",
-          img: "/assts/F13.jpeg"
-      },
-      6: {
-        name: "Mr. Gukesh Dommaraju",
-        dept: "Chess",
-         Desgination: "Chess GrandMaster",
-        qual: "18th World Champion(2024)",
-          img: "/assts/download.jpg"
-      },
-           7: {
-        name: "Mr. Magnus Carlsen",
-        dept: "Chess",
-        Desgination: "Chess GrandMaster",
-        qual: "Five Time World Champion",
-        img: "/assts/magnus.png"
-      },
-      8: {
-        name: "Mikhail Tal",
-        dept: "Chess",
-         Desgination: "Chess GrandMaster",
-        qual: "8th World Champion(1960)",
-          img: "/assts/Mikhail_Tal_1962.jpg"
-      },
-      9: {
-        name: " Mr Bobby Fishcer",
-        dept: "Chess",
-         Desgination: "Chess GrandMaster",
-        qual: "11th World Champion",
-          img: "/assts/images.jpg"
-      },
-      10: {
-        name: " Mr Mohd. Junaid",
-        dept: "Progrmmaming",
-         Desgination: "Programmer",
-        qual: "Html, Css, Javascript, React, Python, Chess, B.sc.",
-          img: "/assts/zenitsu.png"
-      }
-
-
-
-
-      
-
-    }
-
-
-
-        const urlParams = new URLSearchParams(window.location.search);
-    const fid = urlParams.get('fid');
-    const profileDiv = document.getElementById("profile");
-  let imgElem =  profileDiv.querySelector('img');
-  const url = new URL(window.location.href);
-
-let urlPath = url.href;
-if(!url.searchParams.has('fid')){
-    alert("Sorry, you can't access this page directly")
-     window.location.href = "index.html";
-    
-}
-  let imageSrc = imgElem.src;
-  
-try{
-    imgElem.src = teachers[fid].img
-}catch(error){
-   
-}
-let FullName = document.getElementById('Name');
-let Desgination = document.getElementById('desgi')
-let Qualification = document.getElementById('quali')
-let department = document.getElementById('depart')
-FullName.innerText = teachers[fid].name
-Desgination.innerText = teachers[fid].Desgination
-Qualification.innerText = teachers[fid].qual
-department.innerText = teachers[fid].dept
-const toggleMenu = document.getElementById('ToggleMenu');
+    const toggleMenu = document.getElementById('ToggleMenu');
 const nav = document.querySelector('.nav');
 
 toggleMenu.addEventListener('click', () => {
@@ -379,8 +454,5 @@ toggleMenu.addEventListener('click', () => {
   }
 });
 
-
-
 </script>
-
-</html>
+<</html>

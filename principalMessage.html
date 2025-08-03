@@ -160,24 +160,36 @@
         </div>
         <section class="faculty-profile">
         <div class="faculty">
-            <h4 class="faculty-head">Faculty Profile</h4>
+            <h4 class="faculty-head">Principal Message</h4> 
             <div class="idk">
- <a href="index.html">Home </a> <span>/</span> <p>faculty Profile</p>
+ <a href="index.html">Home </a> <span>/</span> <p>Principal Message</p>
             </div>
            
 
         </div>
-         <h3 class="prof">Profile</h3>
-        <div class="user-faculty " id="profile">
-           
-              <img class="faculty-img" src="hello" alt="Faculty image Missing">
-              <ul class="faculty-info">
-                <li class="Name"><span>NAME:</span><p id="Name"></p></li>
-                <li class="Qual"><span>QUALIFICATION:</span><p id="quali">Phd, Cgset</p></li>
-                <li class="Degin"><span>DESGINATION:</span><p id="desgi">English</p></li>
-                <li class="Dept"><span>DEPARTMENT:</span> <p id="depart">English</p></li>
-              </ul>
+        <div class="princial-header">
+               <h3 class="principal-head">Principal Message</h3><div class="line"></div>
+            
+
+
         </div>
+        <div class="mes-holder">
+                 <img class=" principal" src="/assts/principal.jpeg" alt="Faculty image Missing">
+        <div class="mes ">
+           
+           <p>The aim of the college is not only to acquire intellectual knowledge but also to develop the physical and spiritual development of the students. Government College Bagicha is run under the Higher Education Department of Chhattisgarh Government. This college is affiliated to Sant Gahira Guru Ji University, Sarguja Ambikapur. All the curriculum, education and examinations are planned in accordance with Sant Gahira Guru University, Sarguja Ambikapur. This college has graduate level teaching facilities in Science, Arts, Commerce faculties.</p>
+
+
+        </div>
+     
+      
+        </div>
+           <div class="signature">
+            <p class="principal-name">Principal</p>
+            <p class="principal-desgination">Shri Sharad Kumar Netam</p>
+            <p class="principal-qual">Govt. Sant Rameshwar Gahira Guruji College Bagicha Jashpur C.G</p>
+        </div>
+      
         </section>
 
         <footer class="college-footer">
@@ -249,138 +261,15 @@
 
  
   }
+    
+    footer{
+   transform: translateY(400px);
+
+
+  }
   
  
 </style>
 <script>
-
-     const teachers = {
-      1: {
-        name: "Mrs. Astha Tirky",
-        dept: "Botany",
-        Desgination: "Assistant Professor(Botany)",
-        qual: "Msc,Set,Net,Gate.",
-        img: "/assts/F18.jpeg"
-      },
-      2: {
-        name: "Mrs. Pooja Singh",
-        dept: "Chemistry",
-         Desgination: "Guest Lecturer(Chemistry) ",
-        qual: "MSc, B.Ed",
-        img: '/assts/F8.jpg'
-      },
-      3: {
-        name: "Mr. Pravin Minj",
-        dept: "Commerce",
-         Desgination: "Assistant Professor(Commerce)",
-        qual: "M.Com CG-SET",
-        img: '/assts/F4.jpg'
-      },
-      4: {
-        name: "Mrs. Karuna Xalxo",
-        dept: "Zoology",
-        Desgination: "Asistant Professor(Zoology)",
-        qual: "Msc,CgSet.",
-        img: "/assts/F19.jpeg"
-      },
-      5: {
-        name: "Dr. Rajiv Ranjan tigga",
-        dept: "English",
-         Desgination: "Assistant Professor(English)",
-        qual: "M.Phill, Ph.D.",
-          img: "/assts/F13.jpeg"
-      },
-      6: {
-        name: "Mr. Gukesh Dommaraju",
-        dept: "Chess",
-         Desgination: "Chess GrandMaster",
-        qual: "18th World Champion(2024)",
-          img: "/assts/download.jpg"
-      },
-           7: {
-        name: "Mr. Magnus Carlsen",
-        dept: "Chess",
-        Desgination: "Chess GrandMaster",
-        qual: "Five Time World Champion",
-        img: "/assts/magnus.png"
-      },
-      8: {
-        name: "Mikhail Tal",
-        dept: "Chess",
-         Desgination: "Chess GrandMaster",
-        qual: "8th World Champion(1960)",
-          img: "/assts/Mikhail_Tal_1962.jpg"
-      },
-      9: {
-        name: " Mr Bobby Fishcer",
-        dept: "Chess",
-         Desgination: "Chess GrandMaster",
-        qual: "11th World Champion",
-          img: "/assts/images.jpg"
-      },
-      10: {
-        name: " Mr Mohd. Junaid",
-        dept: "Progrmmaming",
-         Desgination: "Programmer",
-        qual: "Html, Css, Javascript, React, Python, Chess, B.sc.",
-          img: "/assts/zenitsu.png"
-      }
-
-
-
-
-      
-
-    }
-
-
-
-        const urlParams = new URLSearchParams(window.location.search);
-    const fid = urlParams.get('fid');
-    const profileDiv = document.getElementById("profile");
-  let imgElem =  profileDiv.querySelector('img');
-  const url = new URL(window.location.href);
-
-let urlPath = url.href;
-if(!url.searchParams.has('fid')){
-    alert("Sorry, you can't access this page directly")
-     window.location.href = "index.html";
-    
-}
-  let imageSrc = imgElem.src;
-  
-try{
-    imgElem.src = teachers[fid].img
-}catch(error){
-   
-}
-let FullName = document.getElementById('Name');
-let Desgination = document.getElementById('desgi')
-let Qualification = document.getElementById('quali')
-let department = document.getElementById('depart')
-FullName.innerText = teachers[fid].name
-Desgination.innerText = teachers[fid].Desgination
-Qualification.innerText = teachers[fid].qual
-department.innerText = teachers[fid].dept
-const toggleMenu = document.getElementById('ToggleMenu');
-const nav = document.querySelector('.nav');
-
-toggleMenu.addEventListener('click', () => {
-  const isOpen = nav.style.maxHeight && nav.style.maxHeight !== '0px';
-
-  if (isOpen) {
-    nav.style.maxHeight = '0px';
-    toggleMenu.classList.remove('ri-close-line');
-    toggleMenu.classList.add('ri-menu-line');
-  } else {
-    nav.style.maxHeight = nav.scrollHeight + 'px';
-    toggleMenu.classList.remove('ri-menu-line');
-    toggleMenu.classList.add('ri-close-line');
-  }
-});
-
-
-
 </script>
-
 </html>
