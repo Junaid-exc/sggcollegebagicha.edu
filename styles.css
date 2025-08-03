@@ -1364,17 +1364,59 @@ footer{
   font-size: 30px;
 
 }
+
+ 
 /* Responsive */
 @media (max-width: 600px) {
   .footer-info {
     flex-direction: column;
     align-items: center;
   }
- 
-  .nav{
-    display: none;
+  .nav-li {
+    display: flex;
+    flex-direction: column;
+    
    
   }
+  .fac {
+    font-size: 15px;
+   
+  }
+  .nav-li li{
+    text-align: center;
+  }
+.dropdown-menu{
+  
+}
+
+.dropdown-menu li{
+  font-size: 15px;
+  font-family: "Open sans", sans-serif;
+}
+.dropdown-menu{
+  left: 95px ;
+  background-color: #3a3a9c;
+}
+.nav {
+ overflow: hidden;
+max-height: 0;
+transition: 0.2s all;
+
+  
+}
+.submenu{
+ left: 60px;
+ top: 90px;
+}
+#ToggleMenu{
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  left: 120px;
+  color: #343F71;
+  transition: 0.2s all;
+}
+
   .lg{
     width: 80px;
     height: 80px;
@@ -1574,7 +1616,6 @@ footer{
   
   .teacher-card {
     width: 200px;
-    
   }
   
   /* Courses section */
@@ -1723,7 +1764,17 @@ footer{
 }
 .head{
   display: flex;
+
+
+
 }
+#ToggleMenu{
+  display: none;
+}
+
+}
+.phone-nav{
+  display: none;
 }
  .faculty-head, .idk{
   transform: translateX(0px);
@@ -1733,6 +1784,7 @@ footer{
   gap: 60px;
   padding: 120px ;
   flex-direction: initial;
+  
 
   
 }

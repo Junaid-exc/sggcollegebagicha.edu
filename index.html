@@ -49,11 +49,13 @@
                 <img class="sant" src="/assts/sant.png" alt="">
                 <img class="amrit" src="/assts/aps_g20_amrit.jpg" alt="">
                 <img class="portal" src="/assts/voterportal.png" alt="">
+                <i class="ri-menu-line" id="ToggleMenu"></i>
             </div>
 
             </div>
             
         </div>
+        
         <div class="nav">
             <ul class="nav-li">
                 <span class="dropdown"> 
@@ -146,19 +148,12 @@
         
                 <span class="dropdown"> 
                     <span class="fac">PHOTO GALLERY</span>
-                    <ul class="dropdown-menu">
-                        <li><i class="ri-arrow-right-s-line"></i>Campus</li>
-                        <li><i class="ri-arrow-right-s-line"></i>Events</li>
-                    </ul>
+                 
                 </span>
         
                 <span class="dropdown"> 
                     <span class="fac">CONTACT US</span>
-                    <ul class="dropdown-menu">
-                        <li><i class="ri-arrow-right-s-line"></i>Location</li>
-                        <li><i class="ri-arrow-right-s-line"></i>Email</li>
-                        <li><i class="ri-arrow-right-s-line"></i>Phone</li>
-                    </ul>
+                 
                 </span>
             </ul>
         </div>
@@ -552,7 +547,7 @@
                 <div class="swiper-slide teacher-card">
         <div class="teacher-img">
           <img src="/assts/Mikhail_Tal_1962.jpg" alt="Mikhail tal">
-      <a href="facultyprofile.html?fid=8">
+      <a href="facultyprofile.?fid=8">
           <div class="teacher-info">
             
             <h3>Mikhail Tal</h3>
@@ -729,6 +724,26 @@
    
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+const toggleMenu = document.getElementById('ToggleMenu');
+const nav = document.querySelector('.nav');
+
+toggleMenu.addEventListener('click', () => {
+  const isOpen = nav.style.maxHeight && nav.style.maxHeight !== '0px';
+
+  if (isOpen) {
+    nav.style.maxHeight = '0px';
+    toggleMenu.classList.remove('ri-close-line');
+    toggleMenu.classList.add('ri-menu-line');
+  } else {
+    nav.style.maxHeight = nav.scrollHeight + 'px';
+    toggleMenu.classList.remove('ri-menu-line');
+    toggleMenu.classList.add('ri-close-line');
+  }
+});
+
+      
+    </script>
  
     
 </body>
