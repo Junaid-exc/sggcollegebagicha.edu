@@ -1903,6 +1903,32 @@ transition: 0.2s all;
          
           font-size: 25px;
         }
+        .font-7{
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
+          color: #1d1d1d;
+          margin-top: 10px;
+        }
+        .objective{
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
+          color: #5d139a;
+          line-height: 28px;
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+        }
+        .history{
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
+          color: #07a7f8;
+          line-height: 28px;
+          margin-top: 10px;
+        }
+        .strng{
+          font-family: "Monserrat", sans-serif;
+          font-size: 22px;
+        }
         .principal{
           width: 380px ;
           padding: 60px 90px;
@@ -1912,6 +1938,12 @@ transition: 0.2s all;
           transform: translateY(60px);
           
           
+        }
+        .other-fontP{
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
+          color: #2f50a3;
+          margin-top: 10px;
         }
         .princial-header .line{
        transform: translateY(40px);
@@ -1959,4 +1991,171 @@ transition: 0.2s all;
      
      }
 
+     .facility-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+.facility-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.facility-header h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 80px;
+    height: 3px;
+    background: #3498db;
+    margin: 0 auto;
+}
+
+.facility-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.facility-image {
+    flex: 1;
+}
+
+.facility-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.facility-details {
+    flex: 2;
+}
+
+.facility-details h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    margin-top: 20px;
+}
+
+.facility-details h4 {
+    color: #000509;
+    margin: 20px 0 10px;
+}
+
+.facility-details ul {
+    padding-left: 20px;
+}
+
+.facility-details li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.responsive-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .facility-content {
+        flex-direction: column;
+    }
+    
+    .facility-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .facility-details h3 {
+        font-size: 1.4rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    .principal-head{
+      white-space: nowrap;
+    }
+    .yl{
+      display: none;
+    }
+    .principal{
+      width: 260px;
+      height: 260px;
+    }
+    .signature{
+    transform: translateY(435px);
+    text-align: center;
+    margin-left: 30px;
      
+    }
+    .mes-holder{
+      flex-direction: column;
+      align-items: center;
+    }
+    .mes{
+      text-align: center;
+     
+    }
+    .mes p{
+      width: 100% !important;
+      margin-left: 20px;
+    }
+    .college-footer{
+      transform: translateY(700px);
+    }
+    
+  }
+
+@media (max-width: 480px) {
+    .facility-container {
+        padding: 15px;
+    }
+    
+    .facility-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .facility-details h3 {
+        font-size: 1.2rem;
+    }
+    
+    .facility-details ul {
+        padding-left: 15px;
+    }
+    
+    .facility-details li {
+        font-size: 0.9rem;
+    }
+  }

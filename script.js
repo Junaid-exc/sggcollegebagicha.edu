@@ -15,7 +15,11 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
+let registerButton = document.querySelector('.register');
+let nameinput = document.querySelector('.nameInput');
+registerButton.addEventListener('click',()=>{
+  alert('You are Gay, ' + nameinput.value + '!');
+})
 
 const teacherSwiper = new Swiper(".teacherSwiper", {
   slidesPerView: 1,
